@@ -1,0 +1,16 @@
+[Unit]
+Description=Managed Service worktime-calculator, worktime.eggsecuter.ch
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=3
+User=server
+WorkingDirectory=/home/server/worktime-calculator
+ExecStart=/home/server/worktime-calculator/start
+
+[Install]
+WantedBy=multi-user.target
+
