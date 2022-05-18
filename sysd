@@ -9,7 +9,7 @@ Restart=always
 RestartSec=3
 User=server
 WorkingDirectory=/home/server/worktime-calculator
-ExecStart=/home/server/worktime-calculator/start
+ExecStart=/home/server/worktime-calculator/start.sh
 
 [Install]
 WantedBy=multi-user.target
