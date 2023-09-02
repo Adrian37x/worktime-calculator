@@ -65,6 +65,6 @@
 
 	<ui-form-inline>
 		<input type="time" bind:value={stampModel} />
-		<ui-button color="success" on:click={addStamp}>+</ui-button>
+		<ui-button on:click={addStamp}>Add</ui-button>
 	</ui-form-inline>
 </ui-page>

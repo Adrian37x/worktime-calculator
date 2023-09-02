@@ -11,10 +11,10 @@
 	const removeStamp = () => dispatch("remove", index);
 </script>
 
-<ui-stamp transition:fly={{y: 20}}>
-	<ui-form-inline>
+<ui-stamp>
+	<ui-form-inline transition:fly={{x: 20}}>
 		<ui-label>{label}</ui-label>
-		
-		<ui-button on:click={removeStamp}>-</ui-button>
+
+		<ui-button on:click={removeStamp}>Remove</ui-button>
 	</ui-form-inline>
 </ui-stamp>
