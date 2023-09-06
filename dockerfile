@@ -1,12 +1,9 @@
-FROM node:12 AS build
+FROM node:12-slim
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY package.json ./
-COPY package-lock.json ./
-RUN npm install
 COPY . ./
-RUN npm run build
 
-FROM nginx:1.19-alpine
-COPY --from=build /app/public /usr/share/nginx/html
+RUN npm install
+
+CMD [ "npm", "start" ]
