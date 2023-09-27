@@ -15,6 +15,6 @@
 	<ui-form-inline transition:fly={{x: 20}}>
 		<ui-label>{label}</ui-label>
 
-		<ui-button on:click={removeStamp}>Remove</ui-button>
+		<ui-button on:click={removeStamp}><img src='icons/trash.svg' /></ui-button>
 	</ui-form-inline>
 </ui-stamp>

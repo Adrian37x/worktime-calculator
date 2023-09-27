@@ -78,6 +78,11 @@ ui-button {
 	cursor: pointer;
 }
 
+ui-button > img {
+	height: 1.3rem;
+	vertical-align: middle;
+}
+
 ui-stamp {
 	display: flex;
 	justify-content: center;
