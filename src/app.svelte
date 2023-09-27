@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Stamp from "./components/stamp.svelte";
 	import { ElapsedWorktime } from "./model/worktime";
-    import { toDate, toTimeString } from "./datetime";
+	import { toDate, toTimeString } from "./datetime";
 
 	let stamps: Date[] = [];
 	let stampModel: string = toTimeString(new Date());
